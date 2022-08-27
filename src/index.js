@@ -1,3 +1,4 @@
+import "./App.css";
 import React from "react";
 
 import ReactDOM from "react-dom";
@@ -19,18 +20,22 @@ const App = () => {
           avatar={faker.image.image()}
         />
       </ApprovalCard>
-      <CommentDetail
-        author="diki"
-        timeAgo={date}
-        content="wow your amazing"
-        avatar={faker.image.image()}
-      />
-      <CommentDetail
-        author="iqbal"
-        timeAgo={date}
-        content="nice blog bro!"
-        avatar={faker.image.image()}
-      />
+      <ApprovalCard>
+        <CommentDetail
+          author="diki"
+          timeAgo={date}
+          content="wow your amazing"
+          avatar={faker.image.image()}
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          author="iqbal"
+          timeAgo={date}
+          content="nice blog bro!"
+          avatar={faker.image.image()}
+        />
+      </ApprovalCard>
     </div>
   );
 };
